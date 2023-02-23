@@ -1,11 +1,9 @@
-# Python program to update
-# JSON
-
-key = ['candidat_id', 'name', 'image_url', 'post']
-dict = {}
-
-for i in range(4):
-    name = input("enter name : ")
-    dict[key[i]] = name
-
-print(dict)
+stringA = "[Mon, sun, Tue, wed]"
+# Given string
+print("Given string", stringA)
+print(type(stringA))
+# String to list
+res = stringA.strip('][').split(',' or ', ')
+# Result and its type
+print("final list", res)
+print(type(res))

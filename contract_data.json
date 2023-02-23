@@ -1,9 +1,45 @@
 {
-     "voters": [],
-     "candidates": [],
-     "results": [],
-     "election_name": " ",
-     "total_votes": " ",
-     "voting_start_time": " ",
-     "voting_end_time": " "
+    "voters": [
+        {
+            "voter_id": "020",
+            "name": "nabin",
+            "voted_to": [],
+            "is_voted": ""
+        },
+        {
+            "voter_id": "020",
+            "name": "nabin",
+            "voted_to": [],
+            "is_voted": ""
+        },
+        {
+            "voter_id": "44",
+            "name": "sudeep",
+            "voted_to": [
+                "noone",
+                " everyone",
+                " someone"
+            ],
+            "is_voted": "true"
+        }
+    ],
+    "candidates": [
+        {
+            "candidate_id": 12,
+            "name": "sudeep",
+            "image_url": "jjl",
+            "post": "kkjkj"
+        },
+        {
+            "candidate_id": 12,
+            "name": "biamal",
+            "image_url": "jjl",
+            "post": "aabb"
+        }
+    ],
+    "results": [],
+    "election_name": "class_election",
+    "total_votes": " ",
+    "voting_start_time": "2023-02-22 20:33:53.481790",
+    "voting_end_time": "2023-02-22 20:38:53.481790"
 }
