@@ -1,45 +1,121 @@
 {
     "voters": [
         {
-            "voter_id": "020",
+            "voter_id": "20",
             "name": "nabin",
-            "voted_to": [],
-            "is_voted": ""
-        },
-        {
-            "voter_id": "020",
-            "name": "nabin",
-            "voted_to": [],
-            "is_voted": ""
-        },
-        {
-            "voter_id": "44",
-            "name": "sudeep",
             "voted_to": [
-                "noone",
-                " everyone",
-                " someone"
+                "12",
+                "15"
             ],
-            "is_voted": "true"
+            "has_voted": false
+        },
+        {
+            "voter_id": "30",
+            "name": "shanti",
+            "voted_to": [
+                "12",
+                "15"
+            ],
+            "has_voted": false
+        },
+        {
+            "voter_id": "35",
+            "name": "kiran",
+            "voted_to": [
+                "12",
+                "15"
+            ],
+            "has_voted": false
         }
     ],
     "candidates": [
         {
-            "candidate_id": 12,
+            "candidate_id": "12",
             "name": "sudeep",
             "image_url": "jjl",
-            "post": "kkjkj"
+            "post": "kkjkj",
+            "logo": "logo_url"
         },
         {
-            "candidate_id": 12,
+            "candidate_id": "15",
             "name": "biamal",
             "image_url": "jjl",
-            "post": "aabb"
+            "post": "aabb",
+            "logo": "logo_url"
+        },
+        {
+            "candidate_id": "18",
+            "name": "knkkn",
+            "image_url": "kj",
+            "post": "hjn",
+            "logo": "logo_url"
+        },
+        {
+            "candidate_id": "14",
+            "name": "sdf",
+            "image_url": "dsf",
+            "post": "df",
+            "logo": "logo_url"
+        },
+        {
+            "candidate_id": "13",
+            "name": "kamal",
+            "image_url": "fdj",
+            "post": "vr",
+            "logo": "logo_url"
         }
     ],
-    "results": [],
-    "election_name": "class_election",
-    "total_votes": " ",
-    "voting_start_time": "2023-02-22 20:33:53.481790",
-    "voting_end_time": "2023-02-22 20:38:53.481790"
+    "results": [
+        {
+            "name": "sudeep",
+            "candidate_id": "12",
+            "image_url": "jjl",
+            "post": "kkjkj",
+            "logo": "logo_url",
+            "votecount": 0
+        },
+        {
+            "name": "biamal",
+            "candidate_id": "15",
+            "image_url": "jjl",
+            "post": "aabb",
+            "logo": "logo_url",
+            "votecount": 0
+        },
+        {
+            "name": "knkkn",
+            "candidate_id": "18",
+            "image_url": "kj",
+            "post": "hjn",
+            "logo": "logo_url",
+            "votecount": 0
+        },
+        {
+            "name": "sdf",
+            "candidate_id": "14",
+            "image_url": "dsf",
+            "post": "df",
+            "logo": "logo_url",
+            "votecount": 0
+        },
+        {
+            "name": "kamal",
+            "candidate_id": "13",
+            "image_url": "fdj",
+            "post": "vr",
+            "logo": "logo_url",
+            "votecount": 0
+        }
+    ],
+    "election_name": "local",
+    "total_votes": 0,
+    "votes_count": {
+        "12": 0,
+        "15": 0,
+        "18": 0,
+        "14": 0,
+        "13": 0
+    },
+    "voting_start_time": "2023-03-03 19:36:44.479579",
+    "voting_end_time": "2023-03-03 19:37:44.479579"
 }
