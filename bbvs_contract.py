@@ -40,6 +40,7 @@ def set_voter_status():
         for i in range(len(file_data["voters"])):
             file_data["voters"][i]["has_voted"] = False
             file_data["total_votes"] = 0
+            file_data["voters"][i]["voted_to"] = []
 
         file.truncate(0)
         file.seek(0)
@@ -56,7 +57,29 @@ def is_voter_available(voter_id):
     if status:
         return True
     else:
-        print("Voter not available")
+        print(f"Voter_id: {voter_id} not available")
+
+def is_candidate_available(candidate_ids):
+    list_candidate_ids = candidate_ids.strip('][').split(',' or ', ')
+    print(type(list_candidate_ids),list_candidate_ids)
+    status = False
+    file_data = load_json()
+    for cand_id in list_candidate_ids:
+        for i in range(len(file_data["candidates"])):
+            if (file_data["candidates"][i]["candidate_id"] == cand_id):
+                status = True
+                break
+            else:
+                status = False
+            print(f"{cand_id}: {status}")
+
+        if status == False:
+            print(f"Candidate_id: {cand_id} not available")
+            break
+
+    if status:
+        return True
+
 
 def has_already_voted(voter_id):
     status = False
@@ -110,6 +133,7 @@ def start_election(election):
     if are_members_available():
         with open(r"C:\Users\acer\PycharmProjects\CLI\contract_data.json", 'r+') as file:
             file_data = json.load(file)
+            file_data["results"] = []           # reset result
 
             file_data['voting_start_time'] = str(voting_start_time)
             file_data['voting_end_time'] = str(voting_end_time)
@@ -218,7 +242,7 @@ def do_vote(vote):
     voter_id, candidate_ids = vote
     # voting lines open
     # is eligible vote
-    if (is_voter_available(voter_id) and has_already_voted(voter_id) and voting_line_open()):
+    if (is_voter_available(voter_id) and is_candidate_available(candidate_ids) and has_already_voted(voter_id) and voting_line_open()):
         with open(r"C:\Users\acer\PycharmProjects\CLI\contract_data.json", 'r+') as file:
             file_data = json.load(file)
 

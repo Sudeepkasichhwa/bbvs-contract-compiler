@@ -4,27 +4,22 @@
             "voter_id": "20",
             "name": "nabin",
             "voted_to": [
-                "12",
-                "15"
+                "13",
+                "15",
+                "14"
             ],
-            "has_voted": false
+            "has_voted": true
         },
         {
             "voter_id": "30",
             "name": "shanti",
-            "voted_to": [
-                "12",
-                "15"
-            ],
+            "voted_to": [],
             "has_voted": false
         },
         {
             "voter_id": "35",
             "name": "kiran",
-            "voted_to": [
-                "12",
-                "15"
-            ],
+            "voted_to": [],
             "has_voted": false
         }
     ],
@@ -65,57 +60,16 @@
             "logo": "logo_url"
         }
     ],
-    "results": [
-        {
-            "name": "sudeep",
-            "candidate_id": "12",
-            "image_url": "jjl",
-            "post": "kkjkj",
-            "logo": "logo_url",
-            "votecount": 0
-        },
-        {
-            "name": "biamal",
-            "candidate_id": "15",
-            "image_url": "jjl",
-            "post": "aabb",
-            "logo": "logo_url",
-            "votecount": 0
-        },
-        {
-            "name": "knkkn",
-            "candidate_id": "18",
-            "image_url": "kj",
-            "post": "hjn",
-            "logo": "logo_url",
-            "votecount": 0
-        },
-        {
-            "name": "sdf",
-            "candidate_id": "14",
-            "image_url": "dsf",
-            "post": "df",
-            "logo": "logo_url",
-            "votecount": 0
-        },
-        {
-            "name": "kamal",
-            "candidate_id": "13",
-            "image_url": "fdj",
-            "post": "vr",
-            "logo": "logo_url",
-            "votecount": 0
-        }
-    ],
-    "election_name": "local",
-    "total_votes": 0,
+    "results": [],
+    "election_name": "president_election",
+    "total_votes": 1,
     "votes_count": {
         "12": 0,
-        "15": 0,
+        "15": 1,
         "18": 0,
-        "14": 0,
-        "13": 0
+        "14": 1,
+        "13": 1
     },
-    "voting_start_time": "2023-03-03 19:36:44.479579",
-    "voting_end_time": "2023-03-03 19:37:44.479579"
+    "voting_start_time": "2023-03-10 20:09:23.127545",
+    "voting_end_time": "2023-03-10 20:14:23.127545"
 }
